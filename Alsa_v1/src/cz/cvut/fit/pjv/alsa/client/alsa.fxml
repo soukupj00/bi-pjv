@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import java.net.URL?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@alsa.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alsa.client.Controller">
+    <stylesheets>
+        <URL value="@alsa.css" />
+    </stylesheets>
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="140.0" spacing="10.0">
+                    <children>
+                        <Label contentDisplay="CENTER" text="Item:" />
+                        <TextField fx:id="nameField" promptText="Name" />
+                        <TextField fx:id="priceField" promptText="Price" />
+                        <Button mnemonicParsing="false" onAction="#onAdd" text="Add" />
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </HBox.margin>
+                </VBox>
+            <Line endX="0" endY="140.0" startX="0" startY="0" />
+                <VBox prefHeight="140.0" spacing="10.0">
+                    <children>
+                        <Label contentDisplay="CENTER" text="Actions:" />
+                        <Button mnemonicParsing="false" onAction="#onSell" text="Sell" />
+                        <Button mnemonicParsing="false" onAction="#onReturn" text="Return" />
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+    </center>
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="150.0" text="Name" />
+          <TableColumn fx:id="priceCol" prefWidth="75.0" text="Price" />
+          <TableColumn fx:id="countCol" prefWidth="75.0" text="Count" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

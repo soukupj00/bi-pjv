@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<AnchorPane id="menu_BG" prefHeight="700.0" prefWidth="1200.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thedrake.ui.MenuController">
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="400.0" layoutY="200.0" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Button id="menu_button" fx:id="twoPlayerButton" alignment="CENTER" layoutX="90.0" layoutY="30.0" mnemonicParsing="false" onAction="#twoPlayerButtonAction" prefHeight="40.0" prefWidth="220.0" text="Hra dvou hráčů" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Yu Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="50.0" radius="37.0" width="100.0" />
+               </effect></Button>
+            <Button id="menu_button" fx:id="singlePlayerButton" alignment="CENTER" layoutX="90.0" layoutY="95.0" mnemonicParsing="false" onAction="#singlePlayerButtonAction" prefHeight="40.0" prefWidth="220.0" text="Hra proti počítači" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Yu Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="50.0" radius="37.0" width="100.0" />
+               </effect></Button>
+            <Button id="menu_button" fx:id="onlinePlayerButton" alignment="CENTER" layoutX="90.0" layoutY="163.0" mnemonicParsing="false" onAction="#onlinePlayerButtonAction" prefHeight="40.0" prefWidth="220.0" text="Hra po internetu" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Yu Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="50.0" radius="37.0" width="100.0" />
+               </effect></Button>
+            <Button id="menu_button" fx:id="closeButton" alignment="CENTER" layoutX="90.0" layoutY="227.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="40.0" prefWidth="220.0" text="Konec" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Yu Gothic Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="50.0" radius="37.0" width="100.0" />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

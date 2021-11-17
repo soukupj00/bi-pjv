@@ -1,0 +1,8 @@
+Button {
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+}
+
+HBox {
+    -fx-background-color: lightgray;
+}

@@ -1,0 +1,48 @@
+.root {
+    -fx-background-image: url("resources/GameBackground.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: RGBA(0, 0, 0, 0.5);
+}
+
+.label {
+    -fx-text-fill: #fab300;
+    -fx-font-size: 30;
+    -fx-wrap-text: true;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, RGBA(0, 0, 0, 0.7), 4, 0.5, 4, 4);
+    -fx-text-alignment: center;
+}
+
+#menu_BG {
+    -fx-background-image: url("resources/DrakeMenu.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+#victory_BG {
+    -fx-background-image: url("resources/victory.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+#menu_button {
+    -fx-border: none;
+    -fx-background-image: url("resources/button3.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-padding: 2px 8px;
+}
+
+#menu_button:hover {
+    -fx-border-color: orange;
+    -fx-border-width: 5px;
+}
+#menu_button:pressed {
+    -fx-text-fill: #fab300;
+}
+
+#victory_label {
+    -fx-text-fill: #fab300;
+    -fx-font-size: 40;
+    -fx-wrap-text: true;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, RGBA(0, 0, 0, 0.7), 7, 0.5, 4, 4);
+    -fx-text-alignment: center;
+}
